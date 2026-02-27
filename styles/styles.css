@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  background: #f5f6f8;
+  color: #111;
+}
+
+.page {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px 32px;
+}
+
+h1 {
+  margin: 0 0 16px;
+}
+
+.block {
+  margin-top: 28px;
+}
+
+.outer {
+  margin-top: 10px;
+  background: #ffffff;
+  border: 2px solid #222;
+}
+
+.box {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #b7d7ff;
+  border: 2px solid #245;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.grid {
+  display: flex;
+}
+
+.gap-10 {
+  padding: 10px;
+  gap: 10px;
+}
+
+.gap-15 {
+  padding: 15px;
+  gap: 15px;
+}
+
+.gap-12 {
+  padding: 12px;
+  gap: 12px;
+}
+
+.grid-2 .box {
+  flex: 1;
+}
+
+.grid-3 .box {
+  flex: 1;
+}
+
+.grid-3-unequal .box {
+  flex: 1;
+}
+
+.grid-3-unequal .box:first-child {
+  flex: 2;
+}
+
+.grid-4-footer {
+  flex-direction: column;
+}
+
+.grid-4-footer .row {
+  display: flex;
+  gap: 12px;
+}
+
+.grid-4-footer .row .box {
+  flex: 1;
+}
+
+.grid-4-footer .footer {
+  width: 100%;
+}
